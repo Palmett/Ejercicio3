@@ -23,11 +23,12 @@
                     <legend class="mx-2 fw-bold">Nueva nota</legend>
                     <fieldset class="d-flex flex-column gap-2">
                         
-                        <input type="text" placeholder="Título de la nota" name="titulo">
+                        <input type="text" placeholder="Título de la nota" name="titulo" id="titulo">
 
-                        <textarea name="textarea" id="" rows="6" placeholder="Contenido de la nota"></textarea>
+                        <textarea name="textarea" id="texto" rows="6" placeholder="Contenido de la nota"></textarea>
                         
                     </fieldset>
+
                     
                     <fieldset class="d-flex m-2 justify-content-evenly">
                         <button class="bg-success" id="button_guardar">Guardar</button>
@@ -36,6 +37,14 @@
 
                 </form>
             </div>
+
+            <div class="d-flex justify-content-center gap-2">
+                <input type="text" id="filtro-texto" placeholder="Buscar por texto...">
+                <label for="filtro-realizada">
+                    <input type="checkbox" id="filtro-realizada"> Solo realizadas
+                </label>
+            </div>
+            
             
             <div id="Tarjetas" class="d-flex flex-wrap justify-content-evenly">
                    

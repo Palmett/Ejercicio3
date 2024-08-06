@@ -2,3 +2,6 @@
     height: 100vh;
 }
 
+.tachado {
+    text-decoration: line-through;
+}
